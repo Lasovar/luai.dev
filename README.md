@@ -1,4 +1,4 @@
-# Luai Salah (Lasovar) – Portfolio
+# Luai Omer (Lasovar) – Portfolio
 
 A single-page responsive portfolio built with HTML and CSS only (no JavaScript) for the Week 06 HCI Lab assignment.
 
