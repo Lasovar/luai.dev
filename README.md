@@ -2,7 +2,7 @@
 
 A single-page responsive portfolio built with HTML and CSS only (no JavaScript) for the Week 06 HCI Lab assignment.
 
-- Live site: https://lasovar.github.io/luai.dev/
+- Live site: https://luai.dev/
 - Figma design: [Luai's Portfolio Mockup.fig](https://www.figma.com/design/7xsV1wVgkf86BUTdiOVADn/Dracula?node-id=0-1&t=cqREjTwWjAmnS3GY-1)
 
 ## Purpose and audience
