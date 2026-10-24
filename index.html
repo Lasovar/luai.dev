@@ -21,7 +21,7 @@
   <input class="notice-toggle" type="checkbox" id="notice-toggle">
   <aside class="notice" aria-label="Site notice">
     <div class="container notice-inner">
-      <p><span class="notice-tag">Note!</span> I know this website is AI-generated &mdash; web dev isn't one of my areas of expertise. Engines are.</p>
+      <p><span class="notice-tag">Note!</span> I know this website is AI-generated &mdash; web dev isn't one of my areas of expertise. Engines are. <strong>The art is not:</strong> none of the art or assets on this site are <span class="nowrap">AI-generated</span> &mdash; every piece was made by human artists.</p>
       <label class="notice-close" for="notice-toggle" title="Dismiss">&times;<span class="visually-hidden"> Dismiss notice</span></label>
     </div>
   </aside>
@@ -136,9 +136,9 @@
           <a class="banx-frame banx-frame-main" href="#banx-shot-1" aria-label="Enlarge BANX key art">
             <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/e325d8e750cd5fd5a9b9124315c38b68bb44446a/capsule_616x353.jpg?t=1749739371" alt="BANX key art: the balloon-headed hero mid-punch, surrounded by the game's colourful cast" width="616" height="353" decoding="async" referrerpolicy="no-referrer">
           </a>
-          <div class="banx-frame banx-frame-sub">
+          <a class="banx-frame banx-frame-sub" href="#banx-clip-1" aria-label="Enlarge BANX clip: the city flyover">
             <video poster="media/banx/clip-1.webp" width="960" height="540" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/banx/clip-1.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video>
-          </div>
+          </a>
           <span class="stamp" aria-hidden="true">Coming to Steam</span>
           <span class="sfx sfx-pop" aria-hidden="true">Pop!</span>
         </div>
@@ -147,9 +147,9 @@
       <!-- Silent trailer cuts; with reduced motion only the poster frame shows -->
       <div class="container">
         <ul class="banx-reel">
-          <li><video poster="media/banx/clip-2.webp" width="960" height="540" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/banx/clip-2.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video></li>
-          <li><video poster="media/banx/clip-3.webp" width="960" height="540" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/banx/clip-3.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video></li>
-          <li><video poster="media/banx/clip-4.webp" width="960" height="540" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/banx/clip-4.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video></li>
+          <li><a href="#banx-clip-2" aria-label="Enlarge BANX clip: balloons"><video poster="media/banx/clip-2.webp" width="960" height="540" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/banx/clip-2.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video></a></li>
+          <li><a href="#banx-clip-3" aria-label="Enlarge BANX clip: street fight and boss"><video poster="media/banx/clip-3.webp" width="960" height="540" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/banx/clip-3.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video></a></li>
+          <li><a href="#banx-clip-4" aria-label="Enlarge BANX clip: boss finale"><video poster="media/banx/clip-4.webp" width="960" height="540" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/banx/clip-4.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video></a></li>
         </ul>
       </div>
     </section>
@@ -474,6 +474,26 @@
       <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
       <a class="lightbox-close" href="#banx">close &times;</a>
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/e325d8e750cd5fd5a9b9124315c38b68bb44446a/capsule_616x353.jpg?t=1749739371" alt="BANX key art: the balloon-headed hero mid-punch, surrounded by the game's colourful cast" width="616" height="353" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="banx-clip-1" role="dialog" aria-label="BANX clip: the city flyover">
+      <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#banx">close &times;</a>
+      <video poster="media/banx/clip-1.webp" width="960" height="540" autoplay muted loop playsinline aria-hidden="true"><source src="media/banx/clip-1.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video>
+    </div>
+    <div class="lightbox" id="banx-clip-2" role="dialog" aria-label="BANX clip: balloons">
+      <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#banx">close &times;</a>
+      <video poster="media/banx/clip-2.webp" width="960" height="540" autoplay muted loop playsinline aria-hidden="true"><source src="media/banx/clip-2.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video>
+    </div>
+    <div class="lightbox" id="banx-clip-3" role="dialog" aria-label="BANX clip: street fight and boss">
+      <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#banx">close &times;</a>
+      <video poster="media/banx/clip-3.webp" width="960" height="540" autoplay muted loop playsinline aria-hidden="true"><source src="media/banx/clip-3.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video>
+    </div>
+    <div class="lightbox" id="banx-clip-4" role="dialog" aria-label="BANX clip: boss finale">
+      <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#banx">close &times;</a>
+      <video poster="media/banx/clip-4.webp" width="960" height="540" autoplay muted loop playsinline aria-hidden="true"><source src="media/banx/clip-4.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video>
     </div>
     <div class="lightbox" id="quelos-shot" role="dialog" aria-label="Quelos editor screenshot">
       <a class="lightbox-backdrop" href="#quelos" tabindex="-1" aria-hidden="true"></a>
