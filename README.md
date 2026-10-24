@@ -7,16 +7,17 @@ A single-page responsive portfolio built with HTML and CSS only (no JavaScript) 
 
 ## Purpose and audience
 
-The site presents my work as a game and engine programmer: my C++ engine **Quelos**, the games I've worked on, my skills, and how to contact me. It's aimed at game studios and recruiters, fellow developers, and the course assessors.
+The site presents my work as a game and engine programmer: **BANX**, the game I'm working on now, my C++ engine **Quelos**, the games I've worked on, my skills, and how to contact me. It's aimed at game studios and recruiters, fellow developers, and the course assessors.
 
 ## Sections
 
-Header, About, Projects, Skills, Contact, Footer.
+Header, Hero, BANX spotlight, About, Projects, Skills, Contact, Footer.
 
 ## Design
 
-- Colors: the [Dracula](https://draculatheme.com) palette (background `#282A36`, foreground `#F8F8F2`, purple `#BD93F9`, pink `#FF79C6`, plus cyan, green, orange, yellow, red and comment for accents)
-- Fonts: Fira Code (headings, labels, code) and Inter (body text), from Google Fonts
+- Style: a comic-book / stylized game UI look inspired by Atlus menus (Persona 3 and 5, Metaphor: ReFantazio) and Hi-Fi Rush: thick ink outlines, hard offset shadows, halftone dots, sunbursts, skewed menu blocks, ransom-note lettering and slanted section edges
+- Colors: taken from the BANX key art: balloon red `#E5202E`, lemon `#FFD83D`, sky `#6CC0F2`, ink `#121016` and paper `#FBF5E9`
+- Fonts: Anton (headings), Bangers (comic sound effects), Archivo (body text and labels) and JetBrains Mono (code), from Google Fonts
 - Icons: [Simple Icons](https://simpleicons.org), inlined as SVG
 
 ## Technical notes
@@ -29,6 +30,7 @@ Header, About, Projects, Skills, Contact, Footer.
   - Roadmap accordion with `<details>`
   - Dismissible notice banner with the checkbox hack
   - Form validation with HTML attributes and `:valid` / `:invalid`
+  - Scrolling ticker and beat-pulsing sticker with CSS animations (turned off for `prefers-reduced-motion`)
 - HTML and CSS pass the W3C validators
 
 ## Structure

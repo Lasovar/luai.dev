@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Luai Salah (Lasovar) &mdash; Game &amp; Engine Programmer</title>
-  <meta name="description" content="Portfolio of Luai Salah (Lasovar), a game development programming student building the Quelos C++ game engine.">
-  <meta name="author" content="Luai Salah">
-  <meta name="theme-color" content="#282a36">
+  <title>Luai Omer (Lasovar) &mdash; Game &amp; Engine Programmer</title>
+  <meta name="description" content="Portfolio of Luai Omer (Lasovar), a game development programming student working on BANX and building the Quelos C++ game engine.">
+  <meta name="author" content="Luai Omer">
+  <meta name="theme-color" content="#121016">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wdth,wght@62..125,400..900&amp;family=Bangers&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
   <input class="notice-toggle" type="checkbox" id="notice-toggle">
   <aside class="notice" aria-label="Site notice">
     <div class="container notice-inner">
-      <p><span class="notice-tag">// note</span> I know this website is AI-generated &mdash; web dev isn't one of my areas of expertise. Engines are.</p>
+      <p><span class="notice-tag">Note!</span> I know this website is AI-generated &mdash; web dev isn't one of my areas of expertise. Engines are.</p>
       <label class="notice-close" for="notice-toggle" title="Dismiss">&times;<span class="visually-hidden"> Dismiss notice</span></label>
     </div>
   </aside>
@@ -32,6 +32,7 @@
       <a class="logo" href="#home" aria-label="luai.dev, back to top">luai<span class="dot">.</span><span class="tld">dev</span></a>
       <nav class="nav" aria-label="Main">
         <ul>
+          <li><a href="#banx">banx</a></li>
           <li><a href="#about">about</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#skills">skills</a></li>
@@ -39,9 +40,9 @@
         </ul>
       </nav>
       <div class="socials">
-          <a class="social" href="https://github.com/Lasovar" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-          <a class="social" href="https://luai-salah.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="itch.io" title="itch.io"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.780 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.740 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.030 8.85 1.952.454 5.545.662 9.150.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.920-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg></a>
-          <a class="social" href="https://steamcommunity.com/id/lasovar" target="_blank" rel="noopener noreferrer" aria-label="Steam" title="Steam"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg></a>
+        <a class="social" href="https://github.com/Lasovar" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a class="social" href="https://luai-salah.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="itch.io" title="itch.io"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.780 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.740 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.030 8.85 1.952.454 5.545.662 9.150.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.920-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg></a>
+        <a class="social" href="https://steamcommunity.com/id/lasovar" target="_blank" rel="noopener noreferrer" aria-label="Steam" title="Steam"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg></a>
       </div>
     </div>
   </header>
@@ -52,58 +53,135 @@
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="eyebrow">// game &amp; engine programmer</p>
-          <h1 class="hero-title" id="hero-title">Hello, I am <span class="name">Luai</span> aka <span class="name">Lasovar</span>.<span class="caret" aria-hidden="true"></span></h1>
-          <p class="tagline">I'm a game development programming student who loves the part of games players never see &mdash; <strong>engines, editors and tools</strong>. Right now I'm building my own C++ engine, <strong>Quelos</strong>, and working on <strong>BANX</strong>, an upcoming game on Steam.</p>
+          <p class="hero-kicker">Game &amp; engine programmer</p>
+          <!-- The ransom-note letters are decorative; screen readers get the plain sentence -->
+          <h1 class="hero-title" id="hero-title">
+            <span class="visually-hidden">Hello, I am Luai Omer, aka Lasovar.</span>
+            <span class="hero-hello" aria-hidden="true">Hello, I am</span>
+            <span class="ransom" aria-hidden="true">
+              <span class="ransom-word"><span class="r r1">L</span><span class="r r2">U</span><span class="r r3">A</span><span class="r r4">I</span></span>
+              <span class="ransom-word"><span class="r r2">O</span><span class="r r5">M</span><span class="r r1">E</span><span class="r r3">R</span></span>
+            </span>
+            <span class="hero-aka" aria-hidden="true">aka <strong>Lasovar</strong></span>
+          </h1>
+          <p class="tagline">I'm a game development programming student who loves the part of games players never see &mdash; <strong>engines, editors and tools</strong>. Right now I'm working on <strong>BANX</strong>, an upcoming game on Steam, and building my own C++ engine, <strong>Quelos</strong>.</p>
           <div class="btn-row">
-            <a class="btn btn-primary" href="#projects">See my work</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            <a class="btn btn-primary" href="#banx">See my work</a>
+            <a class="btn" href="#contact">Get in touch</a>
           </div>
         </div>
 
-        <figure class="editor">
-          <div class="editor-bar" aria-hidden="true">
-            <span class="light light-red"></span><span class="light light-yellow"></span><span class="light light-green"></span>
-            <span class="editor-file">hello.cpp</span>
+        <div class="hero-art">
+          <figure class="editor">
+            <div class="editor-bar" aria-hidden="true">
+              <span class="light light-red"></span><span class="light light-yellow"></span><span class="light light-green"></span>
+              <span class="editor-file">hello.cpp</span>
+            </div>
+            <pre><code><span class="ln"><span class="c-comment">// hello.cpp &mdash; no exceptions, no excuses</span></span><span class="ln"><span class="c-pink">#include</span> <span class="c-yellow">"Quelos/Engine.hpp"</span></span><span class="ln"></span><span class="ln"><span class="c-pink">struct</span> <span class="c-green">Developer</span> {</span><span class="ln">    <span class="c-cyan"><em>std::string_view</em></span> name  = <span class="c-yellow">"Luai Omer"</span>;</span><span class="ln">    <span class="c-cyan"><em>std::string_view</em></span> alias = <span class="c-yellow">"Lasovar"</span>;</span><span class="ln">    <span class="c-cyan"><em>std::array</em></span> focus { <span class="c-yellow">"engines"</span>, <span class="c-yellow">"tools"</span>, <span class="c-yellow">"games"</span> };</span><span class="ln">};</span><span class="ln"></span><span class="ln"><span class="c-pink">int</span> <span class="c-green">main</span>() <span class="c-pink">noexcept</span> {</span><span class="ln">    <span class="c-cyan"><em>flecs::world</em></span> world;</span><span class="ln">    world.<span class="c-green">entity</span>(<span class="c-yellow">"Lasovar"</span>).<span class="c-green">set</span>(<span class="c-green">Developer</span>{});</span><span class="ln ln-active">    <span class="c-pink">return</span> <span class="c-purple">Quelos</span>::<span class="c-green">Run</span>(world);</span><span class="ln">}</span></code></pre>
+          </figure>
+
+          <a class="hero-sticker" href="#banx" aria-label="Now working on BANX: jump to the spotlight">
+            <span class="sticker-inner" aria-hidden="true">
+              <span class="sticker-top">Now working on</span>
+              <svg class="banx-svg" viewBox="0 0 126.81 57.41" aria-hidden="true" focusable="false"><path d="M106.61,29.7l18.51-21.33-11.08-.29-14.62,13.21-13.28-15.57-11.67-.31,7.65,10.95-4.8-1.86-3.96,16.94-2.88-21.62-7.63-3.19-2.71,25.71-2.27-14.32-11.38-7.19-4.34,24.43c-1.99-1.09-4.44-1.9-6.53-2.47,0,0,.94-.53,2.16-1.4.55-.39,1.15-.85,1.75-1.35,1.47-1.34,3.3-3.58,3.02-6.35-.25-2.47-2.23-4.7-3.99-6.21C28.04,9,3.63,0,3.63,0l6.61,14.53,1.24,30.3L0,57.41s28.17-5.4,40.28-11.48l-.71,4.02,8.51-3.48.83-6.25,5.03-1.41.66,4.93,4.5-1.41-.64,6.06,5.35-.3,1.31-14.48,2.51,13.43,3.37-.07-6.02,5.44,22.93-1.17,10.29-11.86,10.56,15.18,18.04-.94-20.2-23.92ZM23.29,44.36c-.38.27-.64.43-.64.43l.38-8.51c.22.1.41.2.61.3,5.57,2.91,1.36,6.56-.35,7.79ZM23.85,32.18c-.38.22-.63.34-.63.34l.32-9.68c.21.08.41.17.61.25,8.19,3.55,1.83,7.86-.3,9.09ZM49.59,35.19l1.83-13.68.24.15,1.66,12.49-3.73,1.04ZM78.53,40.18l5.04-21.75,7.36,10.54-12.41,11.21Z"/></svg>
+              <span class="sticker-bottom">Wishlist it!</span>
+            </span>
+          </a>
+          <span class="sfx sfx-hero" aria-hidden="true">Compile!</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scrolling ticker. Decorative, CSS animation only; the text is duplicated for a seamless loop -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Game programmer</span><span>Now working on BANX</span><span>Engine nerd</span><span>Building Quelos</span><span>Editors should be fast</span><span>Tools are for the whole team</span>
+        <span>Game programmer</span><span>Now working on BANX</span><span>Engine nerd</span><span>Building Quelos</span><span>Editors should be fast</span><span>Tools are for the whole team</span>
+      </div>
+    </div>
+
+    <!-- ============ BANX spotlight ============ -->
+    <section class="banx-spot" id="banx" aria-labelledby="banx-title">
+      <div class="letterbox" aria-hidden="true">
+        <span>Uni Dreams presents</span>
+        <span class="rec">In development</span>
+      </div>
+
+      <div class="container banx-layout">
+        <div class="banx-info">
+          <p class="eyebrow">No. 01 &middot; now playing</p>
+          <h2 class="banx-logo" id="banx-title"><svg class="banx-svg" viewBox="0 0 126.81 57.41" aria-hidden="true" focusable="false"><path d="M106.61,29.7l18.51-21.33-11.08-.29-14.62,13.21-13.28-15.57-11.67-.31,7.65,10.95-4.8-1.86-3.96,16.94-2.88-21.62-7.63-3.19-2.71,25.71-2.27-14.32-11.38-7.19-4.34,24.43c-1.99-1.09-4.44-1.9-6.53-2.47,0,0,.94-.53,2.16-1.4.55-.39,1.15-.85,1.75-1.35,1.47-1.34,3.3-3.58,3.02-6.35-.25-2.47-2.23-4.7-3.99-6.21C28.04,9,3.63,0,3.63,0l6.61,14.53,1.24,30.3L0,57.41s28.17-5.4,40.28-11.48l-.71,4.02,8.51-3.48.83-6.25,5.03-1.41.66,4.93,4.5-1.41-.64,6.06,5.35-.3,1.31-14.48,2.51,13.43,3.37-.07-6.02,5.44,22.93-1.17,10.29-11.86,10.56,15.18,18.04-.94-20.2-23.92ZM23.29,44.36c-.38.27-.64.43-.64.43l.38-8.51c.22.1.41.2.61.3,5.57,2.91,1.36,6.56-.35,7.79ZM23.85,32.18c-.38.22-.63.34-.63.34l.32-9.68c.21.08.41.17.61.25,8.19,3.55,1.83,7.86-.3,9.09ZM49.59,35.19l1.83-13.68.24.15,1.66,12.49-3.73,1.04ZM78.53,40.18l5.04-21.75,7.36,10.54-12.41,11.21Z"/></svg><span class="visually-hidden">BANX</span></h2>
+          <p class="banx-tagline">A hand-animated action-adventure set in a <strong>solar-punk</strong> world.</p>
+          <p class="banx-blurb">Play as BANX, a hero who fights with a balloon as his weapon&hellip; and head? Fast, free-flow combat against hundreds of enemies, an epic cast of bosses, and a dense, vertical city to bounce through. It's the game I'm working on right now.</p>
+
+          <ul class="banx-features">
+            <li>Free-flow combat</li>
+            <li>Hundreds of enemies</li>
+            <li>Epic bosses</li>
+            <li>Vertical city</li>
+          </ul>
+
+          <dl class="facts banx-facts">
+            <div><dt>studio</dt><dd>Uni Dreams</dd></div>
+            <div><dt>platforms</dt><dd>PC, PlayStation, Xbox</dd></div>
+            <div><dt>release</dt><dd>To be announced</dd></div>
+          </dl>
+
+          <div class="btn-row">
+            <a class="btn btn-steam" href="https://store.steampowered.com/app/3572810/BANX/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg> Wishlist on Steam</a>
           </div>
-          <pre><code><span class="ln"><span class="c-comment">// hello.cpp &mdash; no exceptions, no excuses</span></span><span class="ln"><span class="c-pink">#include</span> <span class="c-yellow">"Quelos/Engine.hpp"</span></span><span class="ln"></span><span class="ln"><span class="c-pink">struct</span> <span class="c-green">Developer</span> {</span><span class="ln">    <span class="c-cyan"><em>std::string_view</em></span> name  = <span class="c-yellow">"Luai Salah"</span>;</span><span class="ln">    <span class="c-cyan"><em>std::string_view</em></span> alias = <span class="c-yellow">"Lasovar"</span>;</span><span class="ln">    <span class="c-cyan"><em>std::array</em></span> focus { <span class="c-yellow">"engines"</span>, <span class="c-yellow">"tools"</span>, <span class="c-yellow">"games"</span> };</span><span class="ln">};</span><span class="ln"></span><span class="ln"><span class="c-pink">int</span> <span class="c-green">main</span>() <span class="c-pink">noexcept</span> {</span><span class="ln">    <span class="c-cyan"><em>flecs::world</em></span> world;</span><span class="ln">    world.<span class="c-green">entity</span>(<span class="c-yellow">"Lasovar"</span>).<span class="c-green">set</span>(<span class="c-green">Developer</span>{});</span><span class="ln ln-active">    <span class="c-pink">return</span> <span class="c-purple">Quelos</span>::<span class="c-green">Run</span>(world);</span><span class="ln">}</span></code></pre>
-        </figure>
+        </div>
+
+        <div class="banx-media">
+          <a class="banx-frame banx-frame-main" href="#banx-shot-1" aria-label="Enlarge BANX key art">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/e325d8e750cd5fd5a9b9124315c38b68bb44446a/capsule_616x353.jpg?t=1749739371" alt="BANX key art: the balloon-headed hero mid-punch, surrounded by the game's colourful cast" width="616" height="353" decoding="async" referrerpolicy="no-referrer">
+          </a>
+          <a class="banx-frame banx-frame-sub" href="#banx-shot-2" aria-label="Enlarge BANX street screenshot">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/70a40d603ac1777046b87906f073fdae82b6fe00/page_bg_raw.jpg?t=1749739371" alt="BANX screenshot: the hero bouncing on his balloon in front of a row of hand-drawn shops" width="1438" height="810" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+          </a>
+          <span class="stamp" aria-hidden="true">Coming to Steam</span>
+          <span class="sfx sfx-pop" aria-hidden="true">Pop!</span>
+        </div>
       </div>
     </section>
 
     <!-- ============ About me ============ -->
-    <section class="section" id="about" aria-labelledby="about-title">
+    <section class="section about" id="about" aria-labelledby="about-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">// 01 &middot; about</p>
+          <p class="eyebrow">No. 02 &middot; about</p>
           <h2 id="about-title">About me</h2>
           <p>Programmer by trade, engine nerd by choice.</p>
         </div>
 
         <div class="about-layout">
-          <aside class="profile panel" aria-label="Profile summary">
-            <img class="avatar" src="https://avatars.githubusercontent.com/u/77834783?v=4" alt="Luai's GitHub avatar" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+          <aside class="profile" aria-label="Profile summary">
+            <p class="profile-tag" aria-hidden="true">Status</p>
+            <div class="avatar-frame">
+              <img class="avatar" src="https://avatars.githubusercontent.com/u/77834783?v=4" alt="Luai's GitHub avatar" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            </div>
             <div class="profile-id">
-              <h3>Luai Salah</h3>
+              <h3>Luai Omer</h3>
               <p class="handle">@Lasovar</p>
             </div>
             <dl>
               <div><dt>role</dt><dd>Game programmer</dd></div>
               <div><dt>focus</dt><dd>Engines &amp; tools</dd></div>
               <div><dt>studying</dt><dd>Game dev programming</dd></div>
+              <div><dt>working on</dt><dd>BANX</dd></div>
               <div><dt>engine</dt><dd>Quelos</dd></div>
             </dl>
             <div class="socials">
-          <a class="social" href="https://github.com/Lasovar" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-          <a class="social" href="https://luai-salah.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="itch.io" title="itch.io"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.780 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.740 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.030 8.85 1.952.454 5.545.662 9.150.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.920-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg></a>
-          <a class="social" href="https://steamcommunity.com/id/lasovar" target="_blank" rel="noopener noreferrer" aria-label="Steam" title="Steam"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg></a>
+              <a class="social" href="https://github.com/Lasovar" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+              <a class="social" href="https://luai-salah.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="itch.io" title="itch.io"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.780 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.740 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.030 8.85 1.952.454 5.545.662 9.150.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.920-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg></a>
+              <a class="social" href="https://steamcommunity.com/id/lasovar" target="_blank" rel="noopener noreferrer" aria-label="Steam" title="Steam"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg></a>
             </div>
           </aside>
 
           <div class="about-text">
             <h3>Who I am</h3>
             <p>I'm <strong>Luai</strong> &mdash; online I go by <strong>Lasovar</strong>. I'm a game development programming student, and the part of game development I enjoy most is the part players never see: engine architecture, rendering, tooling, and the editor workflows that make everyone else on a team faster.</p>
-            <p>My main project is <strong>Quelos</strong>, a cross-platform C++ engine and editor I'm building from scratch. Alongside it I prototype gameplay in Unity, join game jams, and I'm currently working on <strong>BANX</strong>, an upcoming action-adventure on Steam.</p>
+            <p>Right now I'm working on <strong>BANX</strong>, an upcoming hand-animated action-adventure on Steam. Alongside it I'm building <strong>Quelos</strong>, a cross-platform C++ engine and editor, from scratch, and I prototype gameplay in Unity and join game jams.</p>
 
             <h3>What I care about</h3>
             <p><strong>Editors should be fast.</strong> A lot of engines treat the editor as &ldquo;just a tool&rdquo;, but it's where developers spend most of their day. I don't want to stare at a screen for five minutes waiting for code to compile or assets to reimport.</p>
@@ -143,12 +221,12 @@
     </section>
 
     <!-- ============ Projects ============ -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">// 02 &middot; projects</p>
+          <p class="eyebrow">No. 03 &middot; projects</p>
           <h2 id="projects-title">Things I've built</h2>
-          <p>An engine, a commercial game in progress, and a couple of game jam entries I'm proud of.</p>
+          <p>My own engine, and a couple of game jam entries I'm proud of. (<a href="#banx">BANX</a> gets the spotlight up top.)</p>
         </div>
 
         <article class="feature panel" id="quelos">
@@ -190,28 +268,6 @@
         </article>
 
         <div class="cards">
-          <article class="card panel" id="banx">
-            <div class="card-media">
-              <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/e325d8e750cd5fd5a9b9124315c38b68bb44446a/capsule_616x353.jpg?t=1749739371" alt="BANX key art" width="616" height="353" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-            </div>
-            <div class="card-body">
-              <div class="badges"><span class="badge badge-dev">In development</span></div>
-              <h3>BANX</h3>
-              <p>A hand-animated action-adventure set in a solar-punk world, where the hero fights with a balloon through fast, free-flow combat against hundreds of enemies and an epic cast of bosses.</p>
-              <dl class="facts">
-                  <div><dt>studio</dt><dd>Uni Dreams</dd></div>
-                  <div><dt>platforms</dt><dd>PC, PlayStation, Xbox</dd></div>
-                  <div><dt>release</dt><dd>To be announced</dd></div>
-              </dl>
-                <ul class="gallery">
-                  <li><a href="#banx-shot-1" aria-label="Enlarge BANX screenshot 1"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/2901e6a30dc9fb46f2f99d845f1f0c9af25b46f7/header.jpg?t=1749739371" alt="BANX screenshot 1" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#banx-shot-2" aria-label="Enlarge BANX screenshot 2"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/70a40d603ac1777046b87906f073fdae82b6fe00/page_bg_raw.jpg?t=1749739371" alt="BANX screenshot 2" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#banx-shot-3" aria-label="Enlarge BANX screenshot 3"><img src="https://shared.akamai.steamstatic.com/community_assets/images/apps/3572810/6c8244d3ef1a4e0ff587120e970789712de94341.jpg" alt="BANX screenshot 3" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                </ul>
-              <a class="btn btn-primary" href="https://store.steampowered.com/app/3572810/BANX/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg> Wishlist on Steam</a>
-            </div>
-          </article>
-
           <article class="card panel" id="the-handbook">
             <div class="card-media">
               <img src="https://img.itch.zone/aW1nLzk1Mzg2MjcucG5n/original/1ZI%2Fph.png" alt="The Handbook cover art" width="630" height="500" loading="lazy" decoding="async" referrerpolicy="no-referrer">
@@ -221,16 +277,16 @@
               <h3>The Handbook</h3>
               <p>Explore a dark world in a metroidvania and navigate dramatic emotional events, each one randomized by a roll of the dice.</p>
               <dl class="facts">
-                  <div><dt>engine</dt><dd>Unity</dd></div>
-                  <div><dt>platform</dt><dd>Windows</dd></div>
-                  <div><dt>team</dt><dd>5 developers</dd></div>
+                <div><dt>engine</dt><dd>Unity</dd></div>
+                <div><dt>platform</dt><dd>Windows</dd></div>
+                <div><dt>team</dt><dd>5 developers</dd></div>
               </dl>
-                <ul class="gallery">
-                  <li><a href="#the-handbook-shot-1" aria-label="Enlarge The Handbook screenshot 1"><img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk1LnBuZw==/347x500/PlPPMq.png" alt="The Handbook screenshot 1" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#the-handbook-shot-2" aria-label="Enlarge The Handbook screenshot 2"><img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk3LnBuZw==/347x500/v45q%2FM.png" alt="The Handbook screenshot 2" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#the-handbook-shot-3" aria-label="Enlarge The Handbook screenshot 3"><img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk2LnBuZw==/347x500/Qson8O.png" alt="The Handbook screenshot 3" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#the-handbook-shot-4" aria-label="Enlarge The Handbook screenshot 4"><img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTQ4MDg2LnBuZw==/347x500/u3aBsu.png" alt="The Handbook screenshot 4" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                </ul>
+              <ul class="gallery">
+                <li><a href="#the-handbook-shot-1" aria-label="Enlarge The Handbook screenshot 1"><img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk1LnBuZw==/347x500/PlPPMq.png" alt="The Handbook screenshot 1" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+                <li><a href="#the-handbook-shot-2" aria-label="Enlarge The Handbook screenshot 2"><img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk3LnBuZw==/347x500/v45q%2FM.png" alt="The Handbook screenshot 2" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+                <li><a href="#the-handbook-shot-3" aria-label="Enlarge The Handbook screenshot 3"><img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk2LnBuZw==/347x500/Qson8O.png" alt="The Handbook screenshot 3" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+                <li><a href="#the-handbook-shot-4" aria-label="Enlarge The Handbook screenshot 4"><img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTQ4MDg2LnBuZw==/347x500/u3aBsu.png" alt="The Handbook screenshot 4" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+              </ul>
               <a class="btn btn-primary" href="https://luai-salah.itch.io/the-handbook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.780 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.740 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.030 8.85 1.952.454 5.545.662 9.150.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.920-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg> Play on itch.io</a>
             </div>
           </article>
@@ -244,130 +300,63 @@
               <h3>Catpire!</h3>
               <p>What?? a vampire cat!?!?! A 2D pixel-art metroidvania about a cute vampire cat who hunts evil bats and drinks their blood.</p>
               <dl class="facts">
-                  <div><dt>engine</dt><dd>Unity</dd></div>
-                  <div><dt>platform</dt><dd>Windows</dd></div>
-                  <div><dt>my role</dt><dd><span class="c-pink">Engineer &amp; level design</span></dd></div>
+                <div><dt>engine</dt><dd>Unity</dd></div>
+                <div><dt>platform</dt><dd>Windows</dd></div>
+                <div><dt>my role</dt><dd>Engineer &amp; level design</dd></div>
               </dl>
-                <ul class="gallery">
-                  <li><a href="#catpire-shot-1" aria-label="Enlarge Catpire! screenshot 1"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjUwOS5wbmc=/347x500/47dERJ.png" alt="Catpire! screenshot 1" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#catpire-shot-2" aria-label="Enlarge Catpire! screenshot 2"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNTg0Mi5wbmc=/347x500/%2BJ4PMQ.png" alt="Catpire! screenshot 2" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#catpire-shot-3" aria-label="Enlarge Catpire! screenshot 3"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjUxMS5wbmc=/347x500/v3vhan.png" alt="Catpire! screenshot 3" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#catpire-shot-4" aria-label="Enlarge Catpire! screenshot 4"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjU2MC5wbmc=/347x500/FViBFG.png" alt="Catpire! screenshot 4" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                  <li><a href="#catpire-shot-5" aria-label="Enlarge Catpire! screenshot 5"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjYzNS5wbmc=/347x500/V5pW0a.png" alt="Catpire! screenshot 5" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
-                </ul>
+              <ul class="gallery">
+                <li><a href="#catpire-shot-1" aria-label="Enlarge Catpire! screenshot 1"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjUwOS5wbmc=/347x500/47dERJ.png" alt="Catpire! screenshot 1" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+                <li><a href="#catpire-shot-2" aria-label="Enlarge Catpire! screenshot 2"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNTg0Mi5wbmc=/347x500/%2BJ4PMQ.png" alt="Catpire! screenshot 2" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+                <li><a href="#catpire-shot-3" aria-label="Enlarge Catpire! screenshot 3"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjUxMS5wbmc=/347x500/v3vhan.png" alt="Catpire! screenshot 3" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+                <li><a href="#catpire-shot-4" aria-label="Enlarge Catpire! screenshot 4"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjU2MC5wbmc=/347x500/FViBFG.png" alt="Catpire! screenshot 4" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+                <li><a href="#catpire-shot-5" aria-label="Enlarge Catpire! screenshot 5"><img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjYzNS5wbmc=/347x500/V5pW0a.png" alt="Catpire! screenshot 5" width="347" height="217" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a></li>
+              </ul>
               <a class="btn btn-primary" href="https://driann.itch.io/catpire" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.780 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.740 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.030 8.85 1.952.454 5.545.662 9.150.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.920-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg> Play on itch.io</a>
             </div>
           </article>
         </div>
       </div>
-
-      <!-- CSS-only lightboxes: opened by #id links above, closed by linking back -->
-      <div class="lightbox" id="quelos-shot" role="dialog" aria-label="Quelos editor screenshot">
-        <a class="lightbox-backdrop" href="#quelos" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#quelos">close &times;</a>
-        <img src="https://github.com/user-attachments/assets/b4ed0d43-4045-4bb8-b788-f6e8e5cba0e1" alt="The Quelos editor with a 3D scene view, hierarchy and inspector panels" width="2560" height="1439" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="banx-shot-1" role="dialog" aria-label="BANX screenshot 1">
-        <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#banx">close &times;</a>
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/2901e6a30dc9fb46f2f99d845f1f0c9af25b46f7/header.jpg?t=1749739371" alt="BANX screenshot 1" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="banx-shot-2" role="dialog" aria-label="BANX screenshot 2">
-        <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#banx">close &times;</a>
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/70a40d603ac1777046b87906f073fdae82b6fe00/page_bg_raw.jpg?t=1749739371" alt="BANX screenshot 2" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="banx-shot-3" role="dialog" aria-label="BANX screenshot 3">
-        <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#banx">close &times;</a>
-        <img src="https://shared.akamai.steamstatic.com/community_assets/images/apps/3572810/6c8244d3ef1a4e0ff587120e970789712de94341.jpg" alt="BANX screenshot 3" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="the-handbook-shot-1" role="dialog" aria-label="The Handbook screenshot 1">
-        <a class="lightbox-backdrop" href="#the-handbook" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#the-handbook">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk1LnBuZw==/original/9PVlI3.png" alt="The Handbook screenshot 1" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="the-handbook-shot-2" role="dialog" aria-label="The Handbook screenshot 2">
-        <a class="lightbox-backdrop" href="#the-handbook" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#the-handbook">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk3LnBuZw==/original/69PDty.png" alt="The Handbook screenshot 2" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="the-handbook-shot-3" role="dialog" aria-label="The Handbook screenshot 3">
-        <a class="lightbox-backdrop" href="#the-handbook" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#the-handbook">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk2LnBuZw==/original/gSP%2FMO.png" alt="The Handbook screenshot 3" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="the-handbook-shot-4" role="dialog" aria-label="The Handbook screenshot 4">
-        <a class="lightbox-backdrop" href="#the-handbook" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#the-handbook">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTQ4MDg2LnBuZw==/original/DpvDUe.png" alt="The Handbook screenshot 4" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="catpire-shot-1" role="dialog" aria-label="Catpire! screenshot 1">
-        <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#catpire">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjUwOS5wbmc=/original/hgPTKY.png" alt="Catpire! screenshot 1" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="catpire-shot-2" role="dialog" aria-label="Catpire! screenshot 2">
-        <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#catpire">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNTg0Mi5wbmc=/original/var%2FUk.png" alt="Catpire! screenshot 2" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="catpire-shot-3" role="dialog" aria-label="Catpire! screenshot 3">
-        <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#catpire">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjUxMS5wbmc=/original/BkLNx8.png" alt="Catpire! screenshot 3" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="catpire-shot-4" role="dialog" aria-label="Catpire! screenshot 4">
-        <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#catpire">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjU2MC5wbmc=/original/Wmv4bb.png" alt="Catpire! screenshot 4" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
-      <div class="lightbox" id="catpire-shot-5" role="dialog" aria-label="Catpire! screenshot 5">
-        <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
-        <a class="lightbox-close" href="#catpire">close &times;</a>
-        <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjYzNS5wbmc=/original/lWa4Jp.png" alt="Catpire! screenshot 5" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      </div>
     </section>
 
     <!-- ============ Skills ============ -->
-    <section class="section" id="skills" aria-labelledby="skills-title">
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">// 03 &middot; skills</p>
+          <p class="eyebrow">No. 04 &middot; skills</p>
           <h2 id="skills-title">Toolbox</h2>
           <p>The languages, libraries and tools I reach for most.</p>
         </div>
 
         <ul class="skill-icons">
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></svg>C++</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z"/></svg>C#</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.8346 11.7033l-1.0073-.6236a13.7268 13.7268 0 00-.0283-.2936l.8656-.8069a.3483.3483 0 00-.1154-.578l-1.1066-.414a8.4958 8.4958 0 00-.087-.2856l.6904-.9587a.3462.3462 0 00-.2257-.5446l-1.1663-.1894a9.3574 9.3574 0 00-.1407-.2622l.49-1.0761a.3437.3437 0 00-.0274-.3361.3486.3486 0 00-.3006-.154l-1.1845.0416a6.7444 6.7444 0 00-.1873-.2268l.2723-1.153a.3472.3472 0 00-.417-.4172l-1.1532.2724a14.0183 14.0183 0 00-.2278-.1873l.0415-1.1845a.3442.3442 0 00-.49-.328l-1.076.491c-.0872-.0476-.1742-.0952-.2623-.1407l-.1903-1.1673A.3483.3483 0 0016.256.955l-.9597.6905a8.4867 8.4867 0 00-.2855-.086l-.414-1.1066a.3483.3483 0 00-.5781-.1154l-.8069.8666a9.2936 9.2936 0 00-.2936-.0284L12.2946.1683a.3462.3462 0 00-.5892 0l-.6236 1.0073a13.7383 13.7383 0 00-.2936.0284L9.9803.3374a.3462.3462 0 00-.578.1154l-.4141 1.1065c-.0962.0274-.1903.0567-.2855.086L7.744.955a.3483.3483 0 00-.5447.2258L7.009 2.348a9.3574 9.3574 0 00-.2622.1407l-1.0762-.491a.3462.3462 0 00-.49.328l.0416 1.1845a7.9826 7.9826 0 00-.2278.1873L3.8413 3.425a.3472.3472 0 00-.4171.4171l.2713 1.1531c-.0628.075-.1255.1509-.1863.2268l-1.1845-.0415a.3462.3462 0 00-.328.49l.491 1.0761a9.167 9.167 0 00-.1407.2622l-1.1662.1894a.3483.3483 0 00-.2258.5446l.6904.9587a13.303 13.303 0 00-.087.2855l-1.1065.414a.3483.3483 0 00-.1155.5781l.8656.807a9.2936 9.2936 0 00-.0283.2935l-1.0073.6236a.3442.3442 0 000 .5892l1.0073.6236c.008.0982.0182.1964.0283.2936l-.8656.8079a.3462.3462 0 00.1155.578l1.1065.4141c.0273.0962.0567.1914.087.2855l-.6904.9587a.3452.3452 0 00.2268.5447l1.1662.1893c.0456.088.0922.1751.1408.2622l-.491 1.0762a.3462.3462 0 00.328.49l1.1834-.0415c.0618.0769.1235.1528.1873.2277l-.2713 1.1541a.3462.3462 0 00.4171.4161l1.153-.2713c.075.0638.151.1255.2279.1863l-.0415 1.1845a.3442.3442 0 00.49.327l1.0761-.49c.087.0486.1741.0951.2622.1407l.1903 1.1662a.3483.3483 0 00.5447.2268l.9587-.6904a9.299 9.299 0 00.2855.087l.414 1.1066a.3452.3452 0 00.5781.1154l.8079-.8656c.0972.0111.1954.0203.2936.0294l.6236 1.0073a.3472.3472 0 00.5892 0l.6236-1.0073c.0982-.0091.1964-.0183.2936-.0294l.8069.8656a.3483.3483 0 00.578-.1154l.4141-1.1066a8.4626 8.4626 0 00.2855-.087l.9587.6904a.3452.3452 0 00.5447-.2268l.1903-1.1662c.088-.0456.1751-.0931.2622-.1407l1.0762.49a.3472.3472 0 00.49-.327l-.0415-1.1845a6.7267 6.7267 0 00.2267-.1863l1.1531.2713a.3472.3472 0 00.4171-.416l-.2713-1.1542c.0628-.0749.1255-.1508.1863-.2278l1.1845.0415a.3442.3442 0 00.328-.49l-.49-1.076c.0475-.0872.0951-.1742.1407-.2623l1.1662-.1893a.3483.3483 0 00.2258-.5447l-.6904-.9587.087-.2855 1.1066-.414a.3462.3462 0 00.1154-.5781l-.8656-.8079c.0101-.0972.0202-.1954.0283-.2936l1.0073-.6236a.3442.3442 0 000-.5892zm-6.7413 8.3551a.7138.7138 0 01.2986-1.396.714.714 0 11-.2997 1.396zm-.3422-2.3142a.649.649 0 00-.7715.5l-.3573 1.6685c-1.1035.501-2.3285.7795-3.6193.7795a8.7368 8.7368 0 01-3.6951-.814l-.3574-1.6684a.648.648 0 00-.7714-.499l-1.473.3158a8.7216 8.7216 0 01-.7613-.898h7.1676c.081 0 .1356-.0141.1356-.088v-2.536c0-.074-.0536-.0881-.1356-.0881h-2.0966v-1.6077h2.2677c.2065 0 1.1065.0587 1.394 1.2088.0901.3533.2875 1.5044.4232 1.8729.1346.413.6833 1.2381 1.2685 1.2381h3.5716a.7492.7492 0 00.1296-.0131 8.7874 8.7874 0 01-.8119.9526zM6.8369 20.024a.714.714 0 11-.2997-1.396.714.714 0 01.2997 1.396zM4.1177 8.9972a.7137.7137 0 11-1.304.5791.7137.7137 0 011.304-.579zm-.8352 1.9813l1.5347-.6824a.65.65 0 00.33-.8585l-.3158-.7147h1.2432v5.6025H3.5669a8.7753 8.7753 0 01-.2834-3.348zm6.7343-.5437V8.7836h2.9601c.153 0 1.0792.1772 1.0792.8697 0 .575-.7107.7815-1.2948.7815zm10.7574 1.4862c0 .2187-.008.4363-.0243.651h-.9c-.09 0-.1265.0586-.1265.1477v.413c0 .973-.5487 1.1846-1.0296 1.2382-.4576.0517-.9648-.1913-1.0275-.4717-.2704-1.5186-.7198-1.8436-1.4305-2.4034.8817-.5599 1.799-1.386 1.799-2.4915 0-1.1936-.819-1.9458-1.3769-2.3153-.7825-.5163-1.6491-.6195-1.883-.6195H5.4682a8.7651 8.7651 0 014.907-2.7699l1.0974 1.151a.648.648 0 00.9182.0213l1.227-1.1743a8.7753 8.7753 0 016.0044 4.2762l-.8403 1.8982a.652.652 0 00.33.8585l1.6178.7188c.0283.2875.0425.577.0425.8717zm-9.3006-9.5993a.7128.7128 0 11.984 1.0316.7137.7137 0 01-.984-1.0316zm8.3389 6.71a.7107.7107 0 01.9395-.3625.7137.7137 0 11-.9405.3635z"/></svg>Rust</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0A11.999 11.999 0 0 0 1.607 18c.001 0 .143.279.545.861.456.661.725.939.725.939L14.194.2s-.468-.09-1.17-.158C12.56-.002 12 0 12 0m4.184.755L4.35 21.248a12 12 0 0 0 1.652 1.144c5.734 3.312 13.078 1.342 16.39-4.394 3.31-5.735 1.342-13.08-4.394-16.39 0 0-.42-.236-.926-.479-.403-.193-.891-.373-.891-.373m-5.38 1.317L2.806 15.926A9.98 9.98 0 0 1 3.34 7a9.99 9.99 0 0 1 7.463-4.928M17 3.34c4.78 2.759 6.42 8.88 3.66 13.66-2.758 4.779-8.881 6.42-13.66 3.66z"/></svg>Odin</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>Python</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"/></svg>Unity</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.411 15.12h-.875v-2.798c.28.156.649.442.875.719zm-7.383 0H4.936l-1.423-4.4h.992l.979 3.093h.013l.992-3.093h.999zm4.394 0h-.833v-.444h-.017c-.112.185-.255.319-.432.401s-.358.123-.541.123q-.3525 0-.576-.093c-.151-.063-.267-.149-.354-.261-.086-.112-.146-.25-.181-.412-.034-.162-.052-.343-.052-.539v-1.961h.876v1.799c0 .263.041.459.123.589.082.129.229.194.438.194.237 0 .41-.071.518-.214.107-.142.159-.375.159-.699v-1.669h.876zm3.134-1.918-.002-.123 1.104-1.147h1.035l-1.201 1.171 1.337 2.017h-1.061zm2.433-.289c.013-.205.065-.375.155-.511.091-.136.205-.244.345-.326.141-.082.298-.14.473-.174.174-.035.349-.052.526-.052.16 0 .324.011.487.034.164.024.315.067.451.132.136.067.246.157.332.274.087.116.13.272.13.466v1.659c0 .144.009.282.024.412.017.131.045.23.086.295h-.889c-.017-.05-.03-.099-.041-.151a1.2 1.2 0 0 1-.021-.157c-.141.144-.304.243-.494.302-.19.058-.382.086-.581.086-.151 0-.293-.02-.424-.056a.99.99 0 0 1-.346-.173c-.099-.077-.176-.177-.23-.295-.056-.119-.085-.261-.085-.425 0-.181.033-.33.095-.447.065-.116.147-.211.246-.28.102-.069.216-.123.345-.158.13-.034.259-.062.391-.084.131-.019.261-.036.388-.049s.24-.031.339-.056c.099-.024.177-.061.235-.108.058-.048.084-.117.08-.207 0-.095-.015-.171-.048-.225a.32.32 0 0 0-.123-.129.51.51 0 0 0-.179-.063c-.069-.01-.14-.015-.218-.015-.172 0-.308.037-.407.11-.1.074-.156.197-.173.369zm2.021.647c-.037.033-.084.059-.138.078a1.04 1.04 0 0 1-.179.045c-.065.013-.13.022-.201.031-.069.008-.14.019-.209.03a1.7 1.7 0 0 0-.194.049c-.065.022-.119.048-.166.084a.39.39 0 0 0-.114.132c-.029.054-.044.121-.044.203 0 .077.015.144.044.196.028.054.069.095.116.127.05.031.108.052.173.065.064.013.133.019.202.019.173 0 .307-.028.402-.086.094-.058.163-.127.209-.207.045-.08.073-.162.082-.244.011-.082.015-.148.015-.196zm1.443-1.628h.833v.444h.017c.11-.185.254-.319.431-.403s.358-.127.542-.127c.235 0 .427.032.576.094.148.065.267.154.353.266.087.112.147.25.182.412.034.162.051.343.051.539v1.961h-.875v-1.799c0-.263-.041-.46-.123-.589-.082-.13-.229-.194-.438-.194-.24 0-.41.071-.518.213-.108.143-.16.376-.16.699v1.67h-.875zm-8.451-.55c.302.149.593.31.876.483v3.253h-.876zm-8.93.159c-.261.768.203 1.635 1.156 2.408-2.122-.911-3.496-2.244-3.184-3.38.434-1.573 3.932-2.177 7.481-1.491 3.136.606 5.416 2.375 5.884 3.617-1.035-.936-2.621-1.883-4.562-2.37-3.235-.816-6.268-.27-6.775 1.216m11.341.613c-.207-.328-.502-.667-.875-1.001v-.436h.875zM24 14.652c0 .265-.207.472-.479.472-.267 0-.481-.207-.481-.472 0-.259.214-.466.481-.466.27 0 .479.207.479.466m-.839 0c0 .207.153.373.364.373.205 0 .356-.164.356-.369 0-.207-.151-.375-.358-.375-.209 0-.362.166-.362.371m.287.246h-.108v-.466c.043-.009.103-.015.179-.015.088 0 .127.015.162.034.026.02.045.056.045.104 0 .052-.039.09-.097.108v.006c.045.017.071.052.086.114.015.072.024.1.035.117h-.117c-.015-.017-.023-.061-.036-.114-.009-.052-.037-.074-.097-.074h-.052zm.002-.266h.052c.06 0 .108-.019.108-.069 0-.043-.031-.071-.1-.071-.028 0-.047.002-.06.007z"/></svg>Vulkan</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.529 8.753h-.705v.941h.706c.376 0 .565-.188.565-.471-.001-.329-.236-.47-.566-.47zm-3.2.282c0-.235-.188-.329-.471-.329h-.705v.706h.659c.329-.047.517-.141.517-.377zm6.212 1.13h.847l-.423-1.083zm-6.588 0h-.847v.706h.847c.329 0 .518-.141.518-.376s-.189-.33-.518-.33zM0 0v24h24V0H0zm8.424 3.012h3.435v.941h-1.176v2.965H9.6V3.953H8.424v-.941zm-.236 0v.894h-2.07v.612H8v.847H6.118v.612h2.118v.941H5.082l-.047-3.906h3.153zm-2.635 7.623c0 .659-.565 1.082-1.459 1.082H2.071V7.812h2.023c.471 0 .847.141 1.082.329.142.141.236.377.236.659 0 .471-.235.706-.612.894.471.141.753.424.753.941zM2.682 5.647c.188.235.376.376.612.376.282 0 .424-.188.424-.565V2.965H4.8v2.494c0 .471-.141.847-.376 1.082s-.612.377-1.083.377c-.706.047-1.082-.236-1.364-.612l.705-.659zm8.377 15.341H2.071v-1.506h8.988v1.506zm.894-9.223l-.282-.706h-1.506l-.282.706h-1.13l.02-.047h-.679l-.8-1.176h-.47v1.176H5.741V7.812h1.835c.612 0 .988.141 1.271.424.235.235.329.518.329.894 0 .612-.329.988-.8 1.224l.605.878 1.465-3.419h1.035l1.647 3.953h-1.175zm2.4-.047h-1.082V7.812h1.082v3.906zm3.953 0h-.941L15.718 9.6v2.165h-1.082V7.812h.988l1.6 2.071V7.812h1.082v3.906zm1.929.047a2.488 2.488 0 0 1-1.835-.612l.612-.706c.376.329.8.471 1.271.471.282 0 .471-.094.471-.282s-.141-.235-.659-.376c-.847-.188-1.459-.424-1.459-1.224 0-.706.565-1.271 1.506-1.271.659 0 1.176.188 1.6.518l-.565.753c-.377-.236-.753-.377-1.083-.377-.282 0-.376.094-.376.235 0 .188.141.235.659.376.894.188 1.459.471 1.459 1.224-.001.8-.612 1.271-1.601 1.271z"/></svg>JetBrains</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.214 4.954v13.615L7.655 24V10.314L3.312 3.845 2.214 4.954zm4.999 17.98l-4.557-4.548V5.136l.59-.596 3.967 5.908v12.485zm14.573-4.457l-.862.937-4.24-6.376V0l5.068 5.092.034 13.385zM7.431.001l12.998 19.835-3.637 3.637L3.787 3.683 7.43 0z"/></svg>Neovim</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>Git</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.001 0C5.376 0 .008 5.369.004 11.992H.002v9.287h.002A2.726 2.726 0 0 0 2.73 24h9.275c6.626-.004 11.993-5.372 11.993-11.997C23.998 5.375 18.628 0 12 0zm2.431 4.94c2.015 0 3.917 1.543 3.917 3.671 0 .197.001.395-.03.619a1.002 1.002 0 0 1-1.137.893 1.002 1.002 0 0 1-.842-1.175 2.61 2.61 0 0 0 .013-.337c0-1.207-.987-1.672-1.92-1.672-.934 0-1.775.784-1.777 1.672.016 1.027 0 2.046 0 3.07l1.732-.012c1.352-.028 1.368 2.009.016 1.998l-1.748.013c-.004.826.006.677.002 1.093 0 0 .015 1.01-.016 1.776-.209 2.25-2.124 4.046-4.424 4.046-2.438 0-4.448-1.993-4.448-4.437.073-2.515 2.078-4.492 4.603-4.469l1.409-.01v1.996l-1.409.013h-.007c-1.388.04-2.577.984-2.6 2.47a2.438 2.438 0 0 0 2.452 2.439c1.356 0 2.441-.987 2.441-2.437l-.001-7.557c0-.14.005-.252.02-.407.23-1.848 1.883-3.256 3.754-3.256z"/></svg>Linux</li>
-          <li class="panel"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.0998.001c.071.0753.1162.1116.1476.1576.5693.8424 1.13 1.691 1.7078 2.5277.3326.4816.6866.9486 1.0416 1.4141.3433.451.7058.8869 1.0494 1.3378.3975.5215.8003 1.0402 1.1696 1.5813.473.6933.9496 1.388 1.3588 2.1188.348.6213.626 1.285.8919 1.9477.1882.4691.3144.9646.4491 1.4537.0624.2267.0799.4659.1163.6994.0449.2858.1211.5717.1258.8583.0125.7465.0773 1.4954-.0528 2.2386-.1433.8195-.3832 1.6041-.74 2.3609-.3607.7646-.7978 1.4708-1.3328 2.1241-.4848.5921-1.054 1.0812-1.6697 1.5296-.452.329-.93.6085-1.4387.8306-.4577.1996-.9293.3597-1.4148.4951-1.0961.3052-2.2076.3722-3.3269.2934-.6747-.0474-1.3574-.1301-2-.3729-.5284-.1996-1.0606-.3967-1.5657-.6462-.3988-.1968-.781-.4435-1.131-.7183-.4591-.3604-.9097-.7418-1.3072-1.167-.356-.3808-.6644-.8153-.941-1.2587-.2916-.468-.5486-.9629-.7693-1.4687-.2385-.546-.3925-1.121-.518-1.71-.1953-.9164-.1322-1.8336-.0923-2.748.0229-.525.1615-1.0504.2945-1.5634.14-.541.3094-1.0786.5147-1.5983.2057-.5205.4445-1.0324.718-1.5204.3432-.6124.7218-1.2066 1.1121-1.7905.3543-.5304.7372-1.0423 1.1218-1.5513.3098-.41.6477-.7988.9614-1.206.3172-.4116.6224-.8326.9293-1.2522.3247-.4441.652-.8865.9656-1.3385.3979-.5728.781-1.156 1.1753-1.7314.0563-.0823.1383-.1475.2082-.2206.0139.0078.0278.0157.042.0235.003.0631.0082.1262.0082.1893.0004.9386.0053 1.8771-.006 2.8157-.0019.1376-.0578.2905-.1327.4085-.303.4795-.6127.9553-.9403 1.4184-.3105.4388-.6459.8601-.9703 1.289-.2673.3532-.5336.7068-.8027 1.0587-.1868.2441-.3829.4812-.5654.7286-.2552.3465-.5115.6933-.7496 1.0515-.2873.432-.57.8684-.828 1.3179-.1847.3215-.3302.6662-.4845 1.0041-.0856.1875-.1644.3793-.2267.5754-.1105.3479-.199.7026-.3094 1.0505-.3109.9774-.245 1.983-.1754 2.9764.0353.5044.2178 1.0035.3707 1.4933.2142.6858.5817 1.294.9963 1.88.283.4003.6042.762.9675 1.0822.299.263.6238.5051.9649.71.3882.2332.7924.4553 1.2163.6085.4523.1637.9303.2849 1.4073.3451.5678.0717 1.1464.0563 1.72.0834.5325.025 1.049-.0816 1.5659-.1832.6562-.129 1.2558-.412 1.8386-.7222.6969-.3707 1.2826-.8958 1.7955-1.4875.5244-.605.9646-1.285 1.2448-2.0319.2955-.7878.5418-1.603.5044-2.4688-.0203-.468.0053-.939-.0378-1.4041-.0317-.3426-.129-.6813-.2196-1.016-.1062-.3932-.215-.7878-.3622-1.1667-.1465-.3775-.3336-.7396-.5175-1.1014-.163-.3205-.3323-.6388-.5226-.9432a16.5743 16.5743 0 0 0-.7372-1.0848c-.3939-.5311-.8106-1.0451-1.2088-1.5727-.4662-.6177-.9314-1.2362-1.382-1.8654-.3889-.5425-.7596-1.0982-1.1303-1.6536-.0595-.0891-.107-.2064-.108-.3108-.0082-1.0156-.0053-2.0312-.0046-3.0467 0-.0339.0086-.0681.0206-.1583z"/></svg>Hyprland</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></svg>C++</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z"/></svg>C#</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.8346 11.7033l-1.0073-.6236a13.7268 13.7268 0 00-.0283-.2936l.8656-.8069a.3483.3483 0 00-.1154-.578l-1.1066-.414a8.4958 8.4958 0 00-.087-.2856l.6904-.9587a.3462.3462 0 00-.2257-.5446l-1.1663-.1894a9.3574 9.3574 0 00-.1407-.2622l.49-1.0761a.3437.3437 0 00-.0274-.3361.3486.3486 0 00-.3006-.154l-1.1845.0416a6.7444 6.7444 0 00-.1873-.2268l.2723-1.153a.3472.3472 0 00-.417-.4172l-1.1532.2724a14.0183 14.0183 0 00-.2278-.1873l.0415-1.1845a.3442.3442 0 00-.49-.328l-1.076.491c-.0872-.0476-.1742-.0952-.2623-.1407l-.1903-1.1673A.3483.3483 0 0016.256.955l-.9597.6905a8.4867 8.4867 0 00-.2855-.086l-.414-1.1066a.3483.3483 0 00-.5781-.1154l-.8069.8666a9.2936 9.2936 0 00-.2936-.0284L12.2946.1683a.3462.3462 0 00-.5892 0l-.6236 1.0073a13.7383 13.7383 0 00-.2936.0284L9.9803.3374a.3462.3462 0 00-.578.1154l-.4141 1.1065c-.0962.0274-.1903.0567-.2855.086L7.744.955a.3483.3483 0 00-.5447.2258L7.009 2.348a9.3574 9.3574 0 00-.2622.1407l-1.0762-.491a.3462.3462 0 00-.49.328l.0416 1.1845a7.9826 7.9826 0 00-.2278.1873L3.8413 3.425a.3472.3472 0 00-.4171.4171l.2713 1.1531c-.0628.075-.1255.1509-.1863.2268l-1.1845-.0415a.3462.3462 0 00-.328.49l.491 1.0761a9.167 9.167 0 00-.1407.2622l-1.1662.1894a.3483.3483 0 00-.2258.5446l.6904.9587a13.303 13.303 0 00-.087.2855l-1.1065.414a.3483.3483 0 00-.1155.5781l.8656.807a9.2936 9.2936 0 00-.0283.2935l-1.0073.6236a.3442.3442 0 000 .5892l1.0073.6236c.008.0982.0182.1964.0283.2936l-.8656.8079a.3462.3462 0 00.1155.578l1.1065.4141c.0273.0962.0567.1914.087.2855l-.6904.9587a.3452.3452 0 00.2268.5447l1.1662.1893c.0456.088.0922.1751.1408.2622l-.491 1.0762a.3462.3462 0 00.328.49l1.1834-.0415c.0618.0769.1235.1528.1873.2277l-.2713 1.1541a.3462.3462 0 00.4171.4161l1.153-.2713c.075.0638.151.1255.2279.1863l-.0415 1.1845a.3442.3442 0 00.49.327l1.0761-.49c.087.0486.1741.0951.2622.1407l.1903 1.1662a.3483.3483 0 00.5447.2268l.9587-.6904a9.299 9.299 0 00.2855.087l.414 1.1066a.3452.3452 0 00.5781.1154l.8079-.8656c.0972.0111.1954.0203.2936.0294l.6236 1.0073a.3472.3472 0 00.5892 0l.6236-1.0073c.0982-.0091.1964-.0183.2936-.0294l.8069.8656a.3483.3483 0 00.578-.1154l.4141-1.1066a8.4626 8.4626 0 00.2855-.087l.9587.6904a.3452.3452 0 00.5447-.2268l.1903-1.1662c.088-.0456.1751-.0931.2622-.1407l1.0762.49a.3472.3472 0 00.49-.327l-.0415-1.1845a6.7267 6.7267 0 00.2267-.1863l1.1531.2713a.3472.3472 0 00.4171-.416l-.2713-1.1542c.0628-.0749.1255-.1508.1863-.2278l1.1845.0415a.3442.3442 0 00.328-.49l-.49-1.076c.0475-.0872.0951-.1742.1407-.2623l1.1662-.1893a.3483.3483 0 00.2258-.5447l-.6904-.9587.087-.2855 1.1066-.414a.3462.3462 0 00.1154-.5781l-.8656-.8079c.0101-.0972.0202-.1954.0283-.2936l1.0073-.6236a.3442.3442 0 000-.5892zm-6.7413 8.3551a.7138.7138 0 01.2986-1.396.714.714 0 11-.2997 1.396zm-.3422-2.3142a.649.649 0 00-.7715.5l-.3573 1.6685c-1.1035.501-2.3285.7795-3.6193.7795a8.7368 8.7368 0 01-3.6951-.814l-.3574-1.6684a.648.648 0 00-.7714-.499l-1.473.3158a8.7216 8.7216 0 01-.7613-.898h7.1676c.081 0 .1356-.0141.1356-.088v-2.536c0-.074-.0536-.0881-.1356-.0881h-2.0966v-1.6077h2.2677c.2065 0 1.1065.0587 1.394 1.2088.0901.3533.2875 1.5044.4232 1.8729.1346.413.6833 1.2381 1.2685 1.2381h3.5716a.7492.7492 0 00.1296-.0131 8.7874 8.7874 0 01-.8119.9526zM6.8369 20.024a.714.714 0 11-.2997-1.396.714.714 0 01.2997 1.396zM4.1177 8.9972a.7137.7137 0 11-1.304.5791.7137.7137 0 011.304-.579zm-.8352 1.9813l1.5347-.6824a.65.65 0 00.33-.8585l-.3158-.7147h1.2432v5.6025H3.5669a8.7753 8.7753 0 01-.2834-3.348zm6.7343-.5437V8.7836h2.9601c.153 0 1.0792.1772 1.0792.8697 0 .575-.7107.7815-1.2948.7815zm10.7574 1.4862c0 .2187-.008.4363-.0243.651h-.9c-.09 0-.1265.0586-.1265.1477v.413c0 .973-.5487 1.1846-1.0296 1.2382-.4576.0517-.9648-.1913-1.0275-.4717-.2704-1.5186-.7198-1.8436-1.4305-2.4034.8817-.5599 1.799-1.386 1.799-2.4915 0-1.1936-.819-1.9458-1.3769-2.3153-.7825-.5163-1.6491-.6195-1.883-.6195H5.4682a8.7651 8.7651 0 014.907-2.7699l1.0974 1.151a.648.648 0 00.9182.0213l1.227-1.1743a8.7753 8.7753 0 016.0044 4.2762l-.8403 1.8982a.652.652 0 00.33.8585l1.6178.7188c.0283.2875.0425.577.0425.8717zm-9.3006-9.5993a.7128.7128 0 11.984 1.0316.7137.7137 0 01-.984-1.0316zm8.3389 6.71a.7107.7107 0 01.9395-.3625.7137.7137 0 11-.9405.3635z"/></svg>Rust</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0A11.999 11.999 0 0 0 1.607 18c.001 0 .143.279.545.861.456.661.725.939.725.939L14.194.2s-.468-.09-1.17-.158C12.56-.002 12 0 12 0m4.184.755L4.35 21.248a12 12 0 0 0 1.652 1.144c5.734 3.312 13.078 1.342 16.39-4.394 3.31-5.735 1.342-13.08-4.394-16.39 0 0-.42-.236-.926-.479-.403-.193-.891-.373-.891-.373m-5.38 1.317L2.806 15.926A9.98 9.98 0 0 1 3.34 7a9.99 9.99 0 0 1 7.463-4.928M17 3.34c4.78 2.759 6.42 8.88 3.66 13.66-2.758 4.779-8.881 6.42-13.66 3.66z"/></svg>Odin</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>Python</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"/></svg>Unity</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.411 15.12h-.875v-2.798c.28.156.649.442.875.719zm-7.383 0H4.936l-1.423-4.4h.992l.979 3.093h.013l.992-3.093h.999zm4.394 0h-.833v-.444h-.017c-.112.185-.255.319-.432.401s-.358.123-.541.123q-.3525 0-.576-.093c-.151-.063-.267-.149-.354-.261-.086-.112-.146-.25-.181-.412-.034-.162-.052-.343-.052-.539v-1.961h.876v1.799c0 .263.041.459.123.589.082.129.229.194.438.194.237 0 .41-.071.518-.214.107-.142.159-.375.159-.699v-1.669h.876zm3.134-1.918-.002-.123 1.104-1.147h1.035l-1.201 1.171 1.337 2.017h-1.061zm2.433-.289c.013-.205.065-.375.155-.511.091-.136.205-.244.345-.326.141-.082.298-.14.473-.174.174-.035.349-.052.526-.052.16 0 .324.011.487.034.164.024.315.067.451.132.136.067.246.157.332.274.087.116.13.272.13.466v1.659c0 .144.009.282.024.412.017.131.045.23.086.295h-.889c-.017-.05-.03-.099-.041-.151a1.2 1.2 0 0 1-.021-.157c-.141.144-.304.243-.494.302-.19.058-.382.086-.581.086-.151 0-.293-.02-.424-.056a.99.99 0 0 1-.346-.173c-.099-.077-.176-.177-.23-.295-.056-.119-.085-.261-.085-.425 0-.181.033-.33.095-.447.065-.116.147-.211.246-.28.102-.069.216-.123.345-.158.13-.034.259-.062.391-.084.131-.019.261-.036.388-.049s.24-.031.339-.056c.099-.024.177-.061.235-.108.058-.048.084-.117.08-.207 0-.095-.015-.171-.048-.225a.32.32 0 0 0-.123-.129.51.51 0 0 0-.179-.063c-.069-.01-.14-.015-.218-.015-.172 0-.308.037-.407.11-.1.074-.156.197-.173.369zm2.021.647c-.037.033-.084.059-.138.078a1.04 1.04 0 0 1-.179.045c-.065.013-.13.022-.201.031-.069.008-.14.019-.209.03a1.7 1.7 0 0 0-.194.049c-.065.022-.119.048-.166.084a.39.39 0 0 0-.114.132c-.029.054-.044.121-.044.203 0 .077.015.144.044.196.028.054.069.095.116.127.05.031.108.052.173.065.064.013.133.019.202.019.173 0 .307-.028.402-.086.094-.058.163-.127.209-.207.045-.08.073-.162.082-.244.011-.082.015-.148.015-.196zm1.443-1.628h.833v.444h.017c.11-.185.254-.319.431-.403s.358-.127.542-.127c.235 0 .427.032.576.094.148.065.267.154.353.266.087.112.147.25.182.412.034.162.051.343.051.539v1.961h-.875v-1.799c0-.263-.041-.46-.123-.589-.082-.13-.229-.194-.438-.194-.24 0-.41.071-.518.213-.108.143-.16.376-.16.699v1.67h-.875zm-8.451-.55c.302.149.593.31.876.483v3.253h-.876zm-8.93.159c-.261.768.203 1.635 1.156 2.408-2.122-.911-3.496-2.244-3.184-3.38.434-1.573 3.932-2.177 7.481-1.491 3.136.606 5.416 2.375 5.884 3.617-1.035-.936-2.621-1.883-4.562-2.37-3.235-.816-6.268-.27-6.775 1.216m11.341.613c-.207-.328-.502-.667-.875-1.001v-.436h.875zM24 14.652c0 .265-.207.472-.479.472-.267 0-.481-.207-.481-.472 0-.259.214-.466.481-.466.27 0 .479.207.479.466m-.839 0c0 .207.153.373.364.373.205 0 .356-.164.356-.369 0-.207-.151-.375-.358-.375-.209 0-.362.166-.362.371m.287.246h-.108v-.466c.043-.009.103-.015.179-.015.088 0 .127.015.162.034.026.02.045.056.045.104 0 .052-.039.09-.097.108v.006c.045.017.071.052.086.114.015.072.024.1.035.117h-.117c-.015-.017-.023-.061-.036-.114-.009-.052-.037-.074-.097-.074h-.052zm.002-.266h.052c.06 0 .108-.019.108-.069 0-.043-.031-.071-.1-.071-.028 0-.047.002-.06.007z"/></svg>Vulkan</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.529 8.753h-.705v.941h.706c.376 0 .565-.188.565-.471-.001-.329-.236-.47-.566-.47zm-3.2.282c0-.235-.188-.329-.471-.329h-.705v.706h.659c.329-.047.517-.141.517-.377zm6.212 1.13h.847l-.423-1.083zm-6.588 0h-.847v.706h.847c.329 0 .518-.141.518-.376s-.189-.33-.518-.33zM0 0v24h24V0H0zm8.424 3.012h3.435v.941h-1.176v2.965H9.6V3.953H8.424v-.941zm-.236 0v.894h-2.07v.612H8v.847H6.118v.612h2.118v.941H5.082l-.047-3.906h3.153zm-2.635 7.623c0 .659-.565 1.082-1.459 1.082H2.071V7.812h2.023c.471 0 .847.141 1.082.329.142.141.236.377.236.659 0 .471-.235.706-.612.894.471.141.753.424.753.941zM2.682 5.647c.188.235.376.376.612.376.282 0 .424-.188.424-.565V2.965H4.8v2.494c0 .471-.141.847-.376 1.082s-.612.377-1.083.377c-.706.047-1.082-.236-1.364-.612l.705-.659zm8.377 15.341H2.071v-1.506h8.988v1.506zm.894-9.223l-.282-.706h-1.506l-.282.706h-1.13l.02-.047h-.679l-.8-1.176h-.47v1.176H5.741V7.812h1.835c.612 0 .988.141 1.271.424.235.235.329.518.329.894 0 .612-.329.988-.8 1.224l.605.878 1.465-3.419h1.035l1.647 3.953h-1.175zm2.4-.047h-1.082V7.812h1.082v3.906zm3.953 0h-.941L15.718 9.6v2.165h-1.082V7.812h.988l1.6 2.071V7.812h1.082v3.906zm1.929.047a2.488 2.488 0 0 1-1.835-.612l.612-.706c.376.329.8.471 1.271.471.282 0 .471-.094.471-.282s-.141-.235-.659-.376c-.847-.188-1.459-.424-1.459-1.224 0-.706.565-1.271 1.506-1.271.659 0 1.176.188 1.6.518l-.565.753c-.377-.236-.753-.377-1.083-.377-.282 0-.376.094-.376.235 0 .188.141.235.659.376.894.188 1.459.471 1.459 1.224-.001.8-.612 1.271-1.601 1.271z"/></svg>JetBrains</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.214 4.954v13.615L7.655 24V10.314L3.312 3.845 2.214 4.954zm4.999 17.98l-4.557-4.548V5.136l.59-.596 3.967 5.908v12.485zm14.573-4.457l-.862.937-4.24-6.376V0l5.068 5.092.034 13.385zM7.431.001l12.998 19.835-3.637 3.637L3.787 3.683 7.43 0z"/></svg>Neovim</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>Git</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.001 0C5.376 0 .008 5.369.004 11.992H.002v9.287h.002A2.726 2.726 0 0 0 2.73 24h9.275c6.626-.004 11.993-5.372 11.993-11.997C23.998 5.375 18.628 0 12 0zm2.431 4.94c2.015 0 3.917 1.543 3.917 3.671 0 .197.001.395-.03.619a1.002 1.002 0 0 1-1.137.893 1.002 1.002 0 0 1-.842-1.175 2.61 2.61 0 0 0 .013-.337c0-1.207-.987-1.672-1.92-1.672-.934 0-1.775.784-1.777 1.672.016 1.027 0 2.046 0 3.07l1.732-.012c1.352-.028 1.368 2.009.016 1.998l-1.748.013c-.004.826.006.677.002 1.093 0 0 .015 1.01-.016 1.776-.209 2.25-2.124 4.046-4.424 4.046-2.438 0-4.448-1.993-4.448-4.437.073-2.515 2.078-4.492 4.603-4.469l1.409-.01v1.996l-1.409.013h-.007c-1.388.04-2.577.984-2.6 2.47a2.438 2.438 0 0 0 2.452 2.439c1.356 0 2.441-.987 2.441-2.437l-.001-7.557c0-.14.005-.252.02-.407.23-1.848 1.883-3.256 3.754-3.256z"/></svg>Linux</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.0998.001c.071.0753.1162.1116.1476.1576.5693.8424 1.13 1.691 1.7078 2.5277.3326.4816.6866.9486 1.0416 1.4141.3433.451.7058.8869 1.0494 1.3378.3975.5215.8003 1.0402 1.1696 1.5813.473.6933.9496 1.388 1.3588 2.1188.348.6213.626 1.285.8919 1.9477.1882.4691.3144.9646.4491 1.4537.0624.2267.0799.4659.1163.6994.0449.2858.1211.5717.1258.8583.0125.7465.0773 1.4954-.0528 2.2386-.1433.8195-.3832 1.6041-.74 2.3609-.3607.7646-.7978 1.4708-1.3328 2.1241-.4848.5921-1.054 1.0812-1.6697 1.5296-.452.329-.93.6085-1.4387.8306-.4577.1996-.9293.3597-1.4148.4951-1.0961.3052-2.2076.3722-3.3269.2934-.6747-.0474-1.3574-.1301-2-.3729-.5284-.1996-1.0606-.3967-1.5657-.6462-.3988-.1968-.781-.4435-1.131-.7183-.4591-.3604-.9097-.7418-1.3072-1.167-.356-.3808-.6644-.8153-.941-1.2587-.2916-.468-.5486-.9629-.7693-1.4687-.2385-.546-.3925-1.121-.518-1.71-.1953-.9164-.1322-1.8336-.0923-2.748.0229-.525.1615-1.0504.2945-1.5634.14-.541.3094-1.0786.5147-1.5983.2057-.5205.4445-1.0324.718-1.5204.3432-.6124.7218-1.2066 1.1121-1.7905.3543-.5304.7372-1.0423 1.1218-1.5513.3098-.41.6477-.7988.9614-1.206.3172-.4116.6224-.8326.9293-1.2522.3247-.4441.652-.8865.9656-1.3385.3979-.5728.781-1.156 1.1753-1.7314.0563-.0823.1383-.1475.2082-.2206.0139.0078.0278.0157.042.0235.003.0631.0082.1262.0082.1893.0004.9386.0053 1.8771-.006 2.8157-.0019.1376-.0578.2905-.1327.4085-.303.4795-.6127.9553-.9403 1.4184-.3105.4388-.6459.8601-.9703 1.289-.2673.3532-.5336.7068-.8027 1.0587-.1868.2441-.3829.4812-.5654.7286-.2552.3465-.5115.6933-.7496 1.0515-.2873.432-.57.8684-.828 1.3179-.1847.3215-.3302.6662-.4845 1.0041-.0856.1875-.1644.3793-.2267.5754-.1105.3479-.199.7026-.3094 1.0505-.3109.9774-.245 1.983-.1754 2.9764.0353.5044.2178 1.0035.3707 1.4933.2142.6858.5817 1.294.9963 1.88.283.4003.6042.762.9675 1.0822.299.263.6238.5051.9649.71.3882.2332.7924.4553 1.2163.6085.4523.1637.9303.2849 1.4073.3451.5678.0717 1.1464.0563 1.72.0834.5325.025 1.049-.0816 1.5659-.1832.6562-.129 1.2558-.412 1.8386-.7222.6969-.3707 1.2826-.8958 1.7955-1.4875.5244-.605.9646-1.285 1.2448-2.0319.2955-.7878.5418-1.603.5044-2.4688-.0203-.468.0053-.939-.0378-1.4041-.0317-.3426-.129-.6813-.2196-1.016-.1062-.3932-.215-.7878-.3622-1.1667-.1465-.3775-.3336-.7396-.5175-1.1014-.163-.3205-.3323-.6388-.5226-.9432a16.5743 16.5743 0 0 0-.7372-1.0848c-.3939-.5311-.8106-1.0451-1.2088-1.5727-.4662-.6177-.9314-1.2362-1.382-1.8654-.3889-.5425-.7596-1.0982-1.1303-1.6536-.0595-.0891-.107-.2064-.108-.3108-.0082-1.0156-.0053-2.0312-.0046-3.0467 0-.0339.0086-.0681.0206-.1583z"/></svg>Hyprland</li>
         </ul>
 
         <div class="skill-groups">
           <div class="skill-group panel">
-            <h3 class="c-pink">// languages</h3>
+            <h3 class="c-pink">Languages</h3>
             <ul class="tags"><li class="tag">C++</li><li class="tag">C#</li><li class="tag">Rust</li><li class="tag">Odin</li><li class="tag">Python</li><li class="tag">Lua</li><li class="tag">daslang</li><li class="tag">HLSL / Slang</li></ul>
           </div>
           <div class="skill-group panel">
-            <h3 class="c-cyan">// engine &amp; graphics</h3>
+            <h3 class="c-cyan">Engine &amp; graphics</h3>
             <ul class="tags"><li class="tag">Flecs (ECS)</li><li class="tag">Diligent Engine</li><li class="tag">Vulkan</li><li class="tag">DirectX 12 / 11</li><li class="tag">hlslpp</li><li class="tag">Dear ImGui</li></ul>
           </div>
           <div class="skill-group panel">
-            <h3 class="c-green">// tools</h3>
+            <h3 class="c-green">Tools</h3>
             <ul class="tags"><li class="tag">Unity</li><li class="tag">JetBrains Rider</li><li class="tag">JetBrains CLion</li><li class="tag">Neovim</li><li class="tag">CMake</li><li class="tag">Git</li><li class="tag">SQLite</li><li class="tag">Linux</li></ul>
           </div>
           <div class="skill-group panel">
-            <h3 class="c-orange">// interests</h3>
+            <h3 class="c-yellow">Interests</h3>
             <ul class="tags"><li class="tag">Engine architecture</li><li class="tag">Rendering</li><li class="tag">Editor tooling</li><li class="tag">Gameplay</li><li class="tag">Level design</li></ul>
           </div>
         </div>
@@ -375,60 +364,60 @@
     </section>
 
     <!-- ============ Contact ============ -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">// 04 &middot; contact</p>
+          <p class="eyebrow">No. 05 &middot; contact</p>
           <h2 id="contact-title">Let's talk</h2>
           <p>Questions about my projects, a game jam team-up, or just want to talk engines? Email me, ping me on Discord, or use the form.</p>
         </div>
 
         <div class="contact-layout">
           <div class="contact-side">
-            <p class="eyebrow">// find me online</p>
+            <p class="eyebrow">Find me online</p>
             <ul class="channels">
-            <li>
-              <a class="channel panel" href="mailto:luaidev@pm.me">
-                <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.4l10 6.3 10-6.3V6zm0 2.75V18h20V8.75l-10 6.3z"/></svg></span>
-                <span class="channel-text"><span class="channel-name">Email</span><span class="channel-url">luaidev@pm.me</span></span>
-                <span class="channel-arrow" aria-hidden="true">&rarr;</span>
-              </a>
-            </li>
-            <li>
-              <a class="channel panel" href="https://discord.com/users/632278458252263424" target="_blank" rel="noopener noreferrer">
-                <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></span>
-                <span class="channel-text"><span class="channel-name">Discord</span><span class="channel-url">lasovar</span></span>
-                <span class="channel-arrow" aria-hidden="true">&rarr;</span>
-              </a>
-            </li>
-            <li>
-              <a class="channel panel" href="https://github.com/Lasovar" target="_blank" rel="noopener noreferrer">
-                <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>
-                <span class="channel-text"><span class="channel-name">GitHub</span><span class="channel-url">github.com/Lasovar</span></span>
-                <span class="channel-arrow" aria-hidden="true">&rarr;</span>
-              </a>
-            </li>
-            <li>
-              <a class="channel panel" href="https://www.linkedin.com/in/luai-omer-b70462346/" target="_blank" rel="noopener noreferrer">
-                <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
-                <span class="channel-text"><span class="channel-name">LinkedIn</span><span class="channel-url">https://www.linkedin.com/in/luai-omer-b70462346/</span></span>
-                <span class="channel-arrow" aria-hidden="true">&rarr;</span>
-              </a>
-            </li>
-            <li>
-              <a class="channel panel" href="https://luai-salah.itch.io/" target="_blank" rel="noopener noreferrer">
-                <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.780 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.740 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.030 8.85 1.952.454 5.545.662 9.150.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.920-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg></span>
-                <span class="channel-text"><span class="channel-name">itch.io</span><span class="channel-url">luai-salah.itch.io</span></span>
-                <span class="channel-arrow" aria-hidden="true">&rarr;</span>
-              </a>
-            </li>
-            <li>
-              <a class="channel panel" href="https://steamcommunity.com/id/lasovar" target="_blank" rel="noopener noreferrer">
-                <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg></span>
-                <span class="channel-text"><span class="channel-name">Steam</span><span class="channel-url">steamcommunity.com/id/lasovar</span></span>
-                <span class="channel-arrow" aria-hidden="true">&rarr;</span>
-              </a>
-            </li>
+              <li>
+                <a class="channel" href="mailto:luaidev@pm.me">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.4l10 6.3 10-6.3V6zm0 2.75V18h20V8.75l-10 6.3z"/></svg></span>
+                  <span class="channel-text"><span class="channel-name">Email</span><span class="channel-url">luaidev@pm.me</span></span>
+                  <span class="channel-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+              <li>
+                <a class="channel" href="https://discord.com/users/632278458252263424" target="_blank" rel="noopener noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></span>
+                  <span class="channel-text"><span class="channel-name">Discord</span><span class="channel-url">lasovar</span></span>
+                  <span class="channel-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+              <li>
+                <a class="channel" href="https://github.com/Lasovar" target="_blank" rel="noopener noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>
+                  <span class="channel-text"><span class="channel-name">GitHub</span><span class="channel-url">github.com/Lasovar</span></span>
+                  <span class="channel-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+              <li>
+                <a class="channel" href="https://www.linkedin.com/in/luai-omer-b70462346/" target="_blank" rel="noopener noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+                  <span class="channel-text"><span class="channel-name">LinkedIn</span><span class="channel-url">linkedin.com/in/luai-omer-b70462346</span></span>
+                  <span class="channel-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+              <li>
+                <a class="channel" href="https://luai-salah.itch.io/" target="_blank" rel="noopener noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.780 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.740 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.030 8.85 1.952.454 5.545.662 9.150.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.920-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></svg></span>
+                  <span class="channel-text"><span class="channel-name">itch.io</span><span class="channel-url">luai-salah.itch.io</span></span>
+                  <span class="channel-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+              <li>
+                <a class="channel" href="https://steamcommunity.com/id/lasovar" target="_blank" rel="noopener noreferrer">
+                  <span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg></span>
+                  <span class="channel-text"><span class="channel-name">Steam</span><span class="channel-url">steamcommunity.com/id/lasovar</span></span>
+                  <span class="channel-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -469,12 +458,75 @@
         </div>
       </div>
     </section>
+
+    <!-- CSS-only lightboxes: opened by #id links above, closed by linking back.
+         Kept outside the sections so their clip-paths can't cut them off. -->
+    <div class="lightbox" id="banx-shot-1" role="dialog" aria-label="BANX key art">
+      <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#banx">close &times;</a>
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/e325d8e750cd5fd5a9b9124315c38b68bb44446a/capsule_616x353.jpg?t=1749739371" alt="BANX key art: the balloon-headed hero mid-punch, surrounded by the game's colourful cast" width="616" height="353" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="banx-shot-2" role="dialog" aria-label="BANX street screenshot">
+      <a class="lightbox-backdrop" href="#banx" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#banx">close &times;</a>
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3572810/70a40d603ac1777046b87906f073fdae82b6fe00/page_bg_raw.jpg?t=1749739371" alt="BANX screenshot: the hero bouncing on his balloon in front of a row of hand-drawn shops" width="1438" height="810" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="quelos-shot" role="dialog" aria-label="Quelos editor screenshot">
+      <a class="lightbox-backdrop" href="#quelos" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#quelos">close &times;</a>
+      <img src="https://github.com/user-attachments/assets/b4ed0d43-4045-4bb8-b788-f6e8e5cba0e1" alt="The Quelos editor with a 3D scene view, hierarchy and inspector panels" width="2560" height="1439" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="the-handbook-shot-1" role="dialog" aria-label="The Handbook screenshot 1">
+      <a class="lightbox-backdrop" href="#the-handbook" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#the-handbook">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk1LnBuZw==/original/9PVlI3.png" alt="The Handbook screenshot 1" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="the-handbook-shot-2" role="dialog" aria-label="The Handbook screenshot 2">
+      <a class="lightbox-backdrop" href="#the-handbook" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#the-handbook">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk3LnBuZw==/original/69PDty.png" alt="The Handbook screenshot 2" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="the-handbook-shot-3" role="dialog" aria-label="The Handbook screenshot 3">
+      <a class="lightbox-backdrop" href="#the-handbook" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#the-handbook">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTM4MDk2LnBuZw==/original/gSP%2FMO.png" alt="The Handbook screenshot 3" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="the-handbook-shot-4" role="dialog" aria-label="The Handbook screenshot 4">
+      <a class="lightbox-backdrop" href="#the-handbook" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#the-handbook">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTYyNTA3Ni85NTQ4MDg2LnBuZw==/original/DpvDUe.png" alt="The Handbook screenshot 4" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="catpire-shot-1" role="dialog" aria-label="Catpire! screenshot 1">
+      <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#catpire">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjUwOS5wbmc=/original/hgPTKY.png" alt="Catpire! screenshot 1" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="catpire-shot-2" role="dialog" aria-label="Catpire! screenshot 2">
+      <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#catpire">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNTg0Mi5wbmc=/original/var%2FUk.png" alt="Catpire! screenshot 2" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="catpire-shot-3" role="dialog" aria-label="Catpire! screenshot 3">
+      <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#catpire">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjUxMS5wbmc=/original/BkLNx8.png" alt="Catpire! screenshot 3" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="catpire-shot-4" role="dialog" aria-label="Catpire! screenshot 4">
+      <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#catpire">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjU2MC5wbmc=/original/Wmv4bb.png" alt="Catpire! screenshot 4" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
+    <div class="lightbox" id="catpire-shot-5" role="dialog" aria-label="Catpire! screenshot 5">
+      <a class="lightbox-backdrop" href="#catpire" tabindex="-1" aria-hidden="true"></a>
+      <a class="lightbox-close" href="#catpire">close &times;</a>
+      <img src="https://img.itch.zone/aW1hZ2UvMTc3MDU1Ni8xMDQxNjYzNS5wbmc=/original/lWa4Jp.png" alt="Catpire! screenshot 5" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </div>
   </main>
 
   <!-- ============ Footer ============ -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Luai Salah &middot; <span class="c-purple">HTML</span> + <span class="c-pink">CSS</span>, zero JavaScript</p>
+      <p>&copy; 2026 Luai Omer &middot; HTML + CSS, <span class="footer-brag">zero JavaScript!</span></p>
       <ul class="footer-links">
         <li><a href="#home">back to top &uarr;</a></li>
         <li><a href="mailto:luaidev@pm.me">Email</a></li>
