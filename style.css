@@ -81,11 +81,13 @@
    edge, so the fill colour fringes it. A 2px outline in the border colour,
    pulled 1px inwards, covers that edge pixel. :where() keeps it at zero
    specificity so focus outlines still win. Set --edge where the border
-   isn't ink. */
-:where(.btn, .tag, .badge, .social, .r4, .hero-aka, .editor, .ticker,
+   isn't ink. The card/feature media are included because their edges sit
+   inside a tilted white panel, which otherwise shows through around them. */
+:where(.panel, .btn, .tag, .badge, .social, .r4, .hero-aka, .editor, .ticker,
   .banx-features li, .banx-frame, .stamp, .banx-reel video, .profile,
-  .timeline li, .gallery a, .lightbox img, .lightbox video, .lightbox-close,
-  .skill-icons li, .channel, .choice-list label),
+  .timeline li, .card-media, .feature-media, .gallery a, .lightbox img,
+  .lightbox video, .lightbox-close, .skill-icons li, .channel,
+  .choice-list label),
 .timeline li::before,
 .roadmap summary::after {
   outline: 2px solid var(--edge, var(--ink));
@@ -997,6 +999,10 @@ p {
   margin: 0 0 1rem;
 }
 
+.banx-logo a {
+  display: inline-block;
+}
+
 .banx-logo .banx-svg {
   width: clamp(12rem, 8rem + 14vw, 22rem);
   fill: var(--red);
@@ -1006,6 +1012,11 @@ p {
   paint-order: stroke fill;
   filter: drop-shadow(6px 6px 0 var(--white));
   transform: rotate(-4deg);
+  transition: transform 0.15s;
+}
+
+.banx-logo a:hover .banx-svg {
+  transform: rotate(0) scale(1.05);
 }
 
 .banx-tagline {
@@ -1141,8 +1152,16 @@ p {
   font-size: 1.3rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-decoration: none;
   box-shadow: 4px 4px 0 var(--ink);
   transform: rotate(-8deg);
+  transition: transform 0.12s, background-color 0.12s, color 0.12s;
+}
+
+.stamp:hover {
+  background: var(--red);
+  color: var(--white);
+  transform: rotate(-4deg) scale(1.08);
 }
 
 .sfx-pop {
@@ -1481,6 +1500,12 @@ p {
   display: flex;
   margin-bottom: 4rem;
   transform: rotate(-0.5deg);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projects .feature:hover {
+  box-shadow: 14px 14px 0 var(--yellow);
+  transform: rotate(0) translateY(-0.4rem);
 }
 
 .feature-media {
@@ -1503,7 +1528,7 @@ p {
   transition: transform 0.4s;
 }
 
-.feature-media:hover img {
+.feature:hover .feature-media img {
   transform: scale(1.04);
 }
 
@@ -1653,6 +1678,7 @@ p {
 }
 
 .card-media {
+  display: block;
   aspect-ratio: 16 / 10;
   overflow: hidden;
   border-bottom: var(--line) solid var(--ink);
