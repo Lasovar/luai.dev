@@ -16,16 +16,6 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- AI disclosure banner. Dismissed with a hidden checkbox (no JavaScript):
-       ticking it hides the banner via .notice-toggle:checked + .notice -->
-  <input class="notice-toggle" type="checkbox" id="notice-toggle">
-  <aside class="notice" aria-label="Site notice">
-    <div class="container notice-inner">
-      <p><span class="notice-tag">Note!</span> I know this website is AI-generated &mdash; web dev isn't one of my areas of expertise. Engines are. <strong>The art is not:</strong> none of the art or assets on this site are <span class="nowrap">AI-generated</span> &mdash; every piece was made by human artists.</p>
-      <label class="notice-close" for="notice-toggle" title="Dismiss">&times;<span class="visually-hidden"> Dismiss notice</span></label>
-    </div>
-  </aside>
-
   <!-- ============ Header ============ -->
   <header class="site-header">
     <div class="container header-inner">
@@ -103,7 +93,7 @@
     <!-- ============ BANX spotlight ============ -->
     <section class="banx-spot" id="banx" aria-labelledby="banx-title">
       <div class="letterbox" aria-hidden="true">
-        <span>Uni Dreams presents</span>
+        <span>Halfway House presents</span>
         <span class="rec">In development</span>
       </div>
 
@@ -122,7 +112,7 @@
           </ul>
 
           <dl class="facts banx-facts">
-            <div><dt>studio</dt><dd>Uni Dreams</dd></div>
+            <div><dt>studio</dt><dd>Halfway House</dd></div>
             <div><dt>platforms</dt><dd>PC, PlayStation, Xbox</dd></div>
             <div><dt>release</dt><dd>To be announced</dd></div>
           </dl>
@@ -549,6 +539,16 @@
 
   <!-- ============ Footer ============ -->
   <footer class="site-footer">
+    <!-- AI disclosure -->
+    <div class="container">
+      <aside class="notice" aria-label="About this site">
+        <p><span class="notice-tag">Note!</span> This site's code (HTML + CSS) was generated with AI &mdash; web dev isn't one of my areas of expertise. Engines are.</p>
+        <ul>
+          <li><strong>The art is not:</strong> none of the art or assets on this site are <span class="nowrap">AI-generated</span> &mdash; every piece was made by human artists.</li>
+          <li><strong>The projects are not:</strong> AI wasn't used on any of the projects showcased here.</li>
+        </ul>
+      </aside>
+    </div>
     <div class="container footer-inner">
       <p>&copy; 2026 Luai Omer &middot; HTML + CSS, <span class="footer-brag">zero JavaScript!</span></p>
       <ul class="footer-links">

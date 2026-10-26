@@ -77,6 +77,21 @@
   box-sizing: border-box;
 }
 
+/* Tilted/skewed boxes: the fill and the border share an anti-aliased outer
+   edge, so the fill colour fringes it. A 2px outline in the border colour,
+   pulled 1px inwards, covers that edge pixel. :where() keeps it at zero
+   specificity so focus outlines still win. Set --edge where the border
+   isn't ink. */
+:where(.btn, .tag, .badge, .social, .r4, .hero-aka, .editor, .ticker,
+  .banx-features li, .banx-frame, .stamp, .banx-reel video, .profile,
+  .timeline li, .gallery a, .lightbox img, .lightbox video, .lightbox-close,
+  .skill-icons li, .channel, .choice-list label),
+.timeline li::before,
+.roadmap summary::after {
+  outline: 2px solid var(--edge, var(--ink));
+  outline-offset: -1px;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 1rem);
@@ -167,78 +182,6 @@ p {
 
 .nowrap {
   white-space: nowrap;
-}
-
-/* AI disclosure banner (dismissible with the checkbox hack) */
-.notice-toggle {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.notice {
-  position: relative;
-  z-index: 60;
-  border-bottom: var(--line) solid var(--ink);
-  background: var(--yellow);
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.notice-toggle:checked + .notice {
-  display: none;
-}
-
-.notice-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.notice p {
-  margin: 0;
-}
-
-.notice-tag {
-  display: inline-block;
-  margin-right: 0.5rem;
-  padding: 0 0.5rem;
-  background: var(--ink);
-  color: var(--yellow);
-  font-family: var(--font-comic);
-  font-size: 1.05rem;
-  letter-spacing: 0.06em;
-  transform: rotate(-3deg);
-}
-
-.notice-close {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border: 2px solid var(--ink);
-  background: var(--white);
-  font-size: 1.3rem;
-  line-height: 1;
-  cursor: pointer;
-  transform: rotate(-6deg);
-  transition: background-color 0.15s, color 0.15s, transform 0.15s;
-}
-
-.notice-close:hover {
-  background: var(--ink);
-  color: var(--yellow);
-  transform: rotate(6deg) scale(1.1);
-}
-
-.notice-toggle:focus-visible + .notice .notice-close {
-  outline: 4px solid var(--blue);
-  outline-offset: 2px;
 }
 
 /* Syntax-colour helpers (code window and accents on dark grounds) */
@@ -393,6 +336,7 @@ p {
 
 /* Badges read as rubber stamps */
 .badge {
+  --edge: currentColor;
   display: inline-block;
   padding: 0.15rem 0.6rem;
   border: var(--line) solid currentColor;
@@ -596,7 +540,11 @@ p {
   overflow: hidden;
   display: flex;
   align-items: center;
-  min-height: calc(92vh - var(--header-h));
+  /* Fill the screen under the sticky header (and its 4px border), minus the
+     part of the tilted ticker that hangs below the hero (~1rem, plus 1.75vw
+     from the -2deg tilt), so the whole ticker fits on the first screen */
+  min-height: calc(100vh - var(--header-h) - 4px - 1.25rem - 1.75vw);
+  min-height: calc(100svh - var(--header-h) - 4px - 1.25rem - 1.75vw);
   padding: 3rem 0 6.5rem;
   color: var(--white);
   background:
@@ -617,13 +565,15 @@ p {
   pointer-events: none;
 }
 
-/* The black shard behind the headline */
+/* The black shard behind the headline. It bleeds off the left edge, but on
+   wide screens its left edge follows the centred content instead, so it
+   doesn't leave a big empty stretch beside the text */
 .hero::after {
   content: "";
   position: absolute;
   top: 6%;
-  left: -8%;
-  width: 66%;
+  left: max(-8%, calc((100% - var(--max)) / 2 - 6rem));
+  right: 42%;
   height: 90%;
   background: var(--ink);
   clip-path: polygon(0 6%, 96% 0, 82% 100%, 6% 90%);
@@ -723,6 +673,7 @@ p {
 }
 
 .r4 {
+  --edge: var(--white);
   border: 0.05em solid var(--white);
   background: var(--ink);
   color: var(--white);
@@ -772,6 +723,7 @@ p {
 }
 
 .hero .btn-primary {
+  --edge: var(--white);
   --btn-shadow: var(--yellow);
   background: var(--red);
   border-color: var(--white);
@@ -811,6 +763,8 @@ p {
   padding: 0.55rem 0.9rem;
   border-bottom: 4px solid var(--ink);
   background: var(--yellow);
+  /* Stop the yellow at the border, or it bleeds into the code area below */
+  background-clip: padding-box;
 }
 
 .light {
@@ -995,9 +949,11 @@ p {
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;
-  min-height: 5.5rem;
+  /* The extra 1.75vw clears the left end of the tilted ticker, which
+     dips further into this bar the wider the screen */
+  min-height: calc(5.5rem + 1.75vw);
   margin-bottom: 4rem;
-  padding: 2.75rem var(--gutter) 0.75rem;
+  padding: calc(2.75rem + 1.75vw) var(--gutter) 0.75rem;
   background: var(--ink);
   color: var(--muted-dark);
   font-family: var(--font-mono);
@@ -1172,6 +1128,7 @@ p {
 }
 
 .stamp {
+  --edge: var(--red);
   position: absolute;
   top: -1.6rem;
   left: -1rem;
@@ -1807,6 +1764,7 @@ p {
 
 .lightbox img,
 .lightbox video {
+  --edge: var(--white);
   position: relative;
   z-index: 1;
   max-width: min(75rem, 100%);
@@ -1835,6 +1793,7 @@ p {
 }
 
 .lightbox-close {
+  --edge: var(--white);
   position: absolute;
   top: 1.25rem;
   right: 1.5rem;
@@ -2217,6 +2176,42 @@ textarea.input {
   font-size: 0.95rem;
 }
 
+/* AI disclosure card */
+.notice {
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  border: var(--line) solid var(--ink);
+  background-color: var(--yellow);
+  box-shadow: 6px 6px 0 var(--red);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.notice p {
+  margin: 0;
+}
+
+.notice ul {
+  margin: 0.6rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.notice li + li {
+  margin-top: 0.3rem;
+}
+
+.notice-tag {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0 0.5rem;
+  background-color: var(--ink);
+  color: var(--yellow);
+  font-family: var(--font-comic);
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  transform: rotate(-3deg);
+}
+
 .footer-inner {
   display: flex;
   flex-wrap: wrap;
@@ -2450,9 +2445,9 @@ textarea.input {
   }
 
   .letterbox {
-    min-height: 4rem;
+    min-height: calc(4rem + 1.75vw);
     margin-bottom: 3rem;
-    padding-top: 1.75rem;
+    padding-top: calc(1.75rem + 1.75vw);
     font-size: 0.62rem;
     letter-spacing: 0.12em;
   }
